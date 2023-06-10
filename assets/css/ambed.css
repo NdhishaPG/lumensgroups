@@ -12963,7 +12963,7 @@ body.boxed-wrapper {
 .checkout__payment__title img {
   margin-left: 15px;
 }
-
+/**/
 .checkout__payment__item--active .checkout__payment__title::before {
   background-color: var(--ambed-base);
   border-color: var(--ambed-base);
