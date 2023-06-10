@@ -41,6 +41,27 @@
     <link rel="stylesheet" id="jssMode" href="assets/css/ambed-light.css">
     <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
 
+    <style type="text/css">
+         .float{
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:100px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+    margin-top:11px;
+}
+     </style>
+
 </head>
 
 <body class="custom-cursor">
@@ -87,10 +108,10 @@
                                     </ul>
                                 </div>
                                 <div class="main-header__top-right-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="pinterest-p"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -105,18 +126,29 @@
                                 <div class="main-menu__main-menu-box">
                                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                     <ul class="main-menu__list">
-                                        <li>
+                                        <li class="dropdown megamenu">
                                             <a href="index.html">Home </a>
                                         </li>
                                         <li>
                                             <a href="about_us.html">About </a>
                                         </li>
                                     
-                                        <li>
+                                        <li class="dropdown">
                                             <a href="services.html">Services </a>
                                             <ul>
-                                                <li><a href="services.html">Corporate Fashions & Uniforms</a>
-                                                    <ul>
+                                                <li><a href="advertising_and_brand.html">Advertising and Brand</a>
+                                                    <ul class="sub-listing">
+                                                        <li>Safety, Directional, Identification & Information Signage</li>
+                                                        <li>Way Finding Signs</li>
+                                                        <li>Back and Front lit signs especially in 3D</li>
+                                                        <li>Acrylic signs</li>
+                                                        <li>Interior Segments, focus on fit out and branding</li>
+                                                        <li>Digital signs-LED signs solutions</li>
+                                                        <li>Branding- Indoor and Outdoor</li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="uniforms_and_fashions.html">Uniforms & Fashions</a>
+                                                    <ul class="sub-listing">
                                                         <li>T-shirts-Polo type, Round neck type</li>
                                                         <li>Formal Shirts and pants</li>
                                                         <li>Formal jackets</li>
@@ -133,8 +165,8 @@
                                                     </ul>
 
                                                 </li>
-                                                <li><a href="services.html">Safety and Protection</a>
-                                                    <ul>
+                                                <li><a href="safety_and_protection.html">Safety and Protection</a>
+                                                    <ul class="sub-listing">
                                                         <li>Helmets and Bump caps</li>
                                                         <li>Safety Shoes</li>
                                                         <li>Coveralls & Safety Vests</li>
@@ -147,21 +179,12 @@
                                                         <li>Road/Traffic Safety Equipment Gift and Promotions</li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="services.html">Advertising and Branding solutions</a>
-                                                    <ul>
-                                                        <li>Safety, Directional, Identification & Information Signage</li>
-                                                        <li>Way Finding Signs</li>
-                                                        <li>Back and Front lit signs especially in 3D</li>
-                                                        <li>Acrylic signs</li>
-                                                        <li>Interior Segments, focus on fit out and branding</li>
-                                                        <li>Digital signs-LED signs solutions</li>
-                                                        <li>Branding- Indoor and Outdoor</li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="gift_and_promotion.html">Gift & Promotion</a></li>
+                                                
                                                 
                                             </ul>
                                         </li>
-                                        <li>
+                                        <li class="dropdown">
                                             <a href="products.html">Products</a>
                                         </li>
                                        
@@ -203,19 +226,19 @@
             </div>
         </section>
        
-        <section class="services-page">
+       <section class="services-page">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services-one__single wow fadeInUp" data-wow-delay="100ms">
                             <div class="services-one__img">
-                                <img src="assets/images/Corporate-Fashions-&-Uniforms.jpg" alt="">
-                                <div class="services-one__icon">
+                                <img src="assets/images/Advertising-and-Branding-solutions.jpg" alt="">
+                                <!-- <div class="services-one__icon">
                                     <span class="icon-wallpaper-3"></span>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="services-one__content">
-                                <h3 class="services-one__title"><a href="">Corporate Fashions & Uniforms</a></h3>
+                                <h3 class="services-one__title"><a href="advertising_and_brand.html">Advertising & Brand</a></h3>
                                 <p class="services-one__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
@@ -223,13 +246,14 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services-one__single wow fadeInUp" data-wow-delay="200ms">
                             <div class="services-one__img">
-                                <img src="assets/images/Safety-and-Protection.jpg" alt="">
-                                <div class="services-one__icon">
+                                <img src="assets/images/Corporate-Fashions-Uniforms.jpg" alt="">
+                               <!--  <div class="services-one__icon">
                                     <span class="icon-wallpaper-4"></span>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="services-one__content">
-                                <h3 class="services-one__title"><a href="">Safety and Protection</a></h3>
+                                <h3 class="services-one__title"><a href="uniforms_and_fashions.html">
+Uniforms & Fashions</a></h3>
                                 <p class="services-one__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                             </div>
@@ -238,13 +262,28 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services-one__single wow fadeInUp" data-wow-delay="300ms">
                             <div class="services-one__img">
-                                <img src="assets/images/Advertising-and-Branding-solutions.jpg" alt="">
-                                <div class="services-one__icon">
+                                <img src="assets/images/Safety-and-Protection.jpg" alt="">
+                                <!-- <div class="services-one__icon">
                                     <span class="icon-paint"></span>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="services-one__content">
-                                <h3 class="services-one__title"><a href="">Advertising and Branding solutions</a></h3>
+                                <h3 class="services-one__title"><a href="safety_and_protection.html">Safety & Protection</a></h3>
+                                <p class="services-one__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-one__single wow fadeInUp" data-wow-delay="300ms">
+                            <div class="services-one__img">
+                                <img src="assets/images/Gift-&-Promotion-solutions.jpg" alt="">
+                                <!-- <div class="services-one__icon">
+                                    <span class="icon-paint"></span>
+                                </div> -->
+                            </div>
+                            <div class="services-one__content">
+                                <h3 class="services-one__title"><a href="gift_and_promotion.html">Gift & Promotion</a></h3>
                                 <p class="services-one__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                             </div>
@@ -257,9 +296,7 @@
         </section>
         <br><br>
         
-       
-        
-        <footer class="site-footer">
+<footer class="site-footer">
             <!-- <div class="site-footer-bg" style="background-image: url(assets/images/backgrounds/site-footer-bg.jpg);"> -->
                 <div class="site-footer-bg" style="background-color: #000000">
             </div>
@@ -275,10 +312,10 @@
                                     <p class="footer-widget__about-text">LUMENS specializes in selling PPE, Internal and External signs and branding Solutions, Corporate and Industrial Apparels and Uniforms and Gift and Promotional items .</p>
                                 </div>
                                 <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="pinterest-p"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -295,12 +332,13 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="footer-widget__column footer-widget__services clearfix">
+                          <div class="footer-widget__column footer-widget__services clearfix">
                                 <h3 class="footer-widget__title">Services</h3>
                                 <ul class="footer-widget__services-list list-unstyled clearfix">
-                                    <li><a href="services.html">Corporate Fashions and Uniforms</a></li>
-                                    <li><a href="services.html">Safety and Protection</a></li>
-                                    <li><a href="services.html">Advertising and Branding solutions</a></li>
+                                    <li><a href="advertising_and_brand.html">Advertising & Brand</a></li>
+                                    <li><a href="uniforms_and_fashions.html">Uniforms & Fashions</a></li>
+                                    <li><a href="safety_and_protection.html">Safety & Protection</a></li>
+                                    <li><a href="gift_and_promotion.html">Gift & Promotion</a></li>
                                     
                                 </ul>
                             </div>
@@ -410,9 +448,15 @@
         </div>
     </div>
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a><br>
 
 
+    <!-- <a href="https://web.whatsapp.com/send?phone=++971557671646&text=" data-target="html" class="scroll-to-target scroll-to-top" style="bottom: 98px;background-color: #136204"><img src="assets/images/whatsapp.png" class="whatsapp"> </a>
+ -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=+971528752169&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/jarallax/jarallax.min.js"></script>
