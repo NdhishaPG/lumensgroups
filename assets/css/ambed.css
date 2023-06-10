@@ -562,7 +562,7 @@ ul {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
-  color: #787e79;
+  color: #e8f5ea;
 }
 
 .main-header__top-address li .content h5 {
@@ -572,7 +572,7 @@ ul {
 }
 
 .main-header__top-address li .content h5 a {
-  color: #b0b9b2;
+  color:#e8f5ea;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
