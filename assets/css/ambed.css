@@ -12915,6 +12915,7 @@ body.boxed-wrapper {
   font-weight: 400;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  
 }
 
 .checkout__payment {
