@@ -427,9 +427,10 @@ ul {
 .main-header__top {
   position: relative;
   display: block;
-  background-color: #000000;
+  background-color: #000010;
   padding-bottom: 35px;
   margin-bottom: -35px;
+
 }
 
 .main-header__top:before {
@@ -12968,6 +12969,7 @@ body.boxed-wrapper {
   background-color: var(--ambed-base);
   border-color: var(--ambed-base);
   content: '\f00c';
+
 }
 
 .checkout__payment__content {
