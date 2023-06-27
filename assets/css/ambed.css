@@ -967,7 +967,7 @@ ul {
 .main-menu .main-menu__list>li>ul>li>ul>li:hover>a,
 .stricky-header .main-menu__list>li>ul>li:hover>a,
 .stricky-header .main-menu__list>li>ul>li>ul>li:hover>a {
-  background-color: var(--ambed-base, #a47c68);
+  background-color: #0c2876;
   color: var(--ambed-white, #ffffff);
 }
 
@@ -9178,7 +9178,7 @@ ul {
 }
 
 .service-details__category-list li a {
-  color: var(--ambed-gray, #8b827d);
+  color: #666362;
   font-size: 16px;
   position: relative;
   -webkit-transition: all 500ms ease;
@@ -9190,7 +9190,7 @@ ul {
 }
 
 .service-details__category-list li a:hover {
-  background-color: var(--ambed-base, #a47c68);
+  background-color: #000000;
   color: var(--ambed-white, #ffffff);
 }
 
@@ -9241,7 +9241,7 @@ ul {
   margin-bottom: 30px;
   text-align: center;
   z-index: 1;
-  background-color: #30241e;
+  background-color: #020202e8;
 }
 
 .service-details__need-help-bg {
@@ -9279,12 +9279,12 @@ ul {
 }
 
 .service-details__need-help-icon:hover {
-  background-color: var(--ambed-black, #3c3531);
+  background-color: #e2e8fd;
 }
 
 .service-details__need-help-icon span {
   font-size: 30px;
-  color: var(--ambed-base, #a47c68);
+  color: #020630;
 }
 
 .service-details__need-help-title {
@@ -11298,6 +11298,7 @@ body.boxed-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: none;
   }
 }
 
@@ -12986,7 +12987,7 @@ body.boxed-wrapper {
   width: 500px;
 }
 .sub-listing li{
-  padding: 9px;
+  /*padding: 9px;*/
 }
 
 .slide_img img{
