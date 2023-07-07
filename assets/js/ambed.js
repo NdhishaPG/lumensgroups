@@ -605,9 +605,9 @@
     });
   }
 
-  if ($("#project-one__thumb").length) {
-    let testimonialsThumb = new Swiper("#project-one__thumb", {
-      slidesPerView: 4,
+  if ($(".project-one__thumb").length) {
+    let testimonialsThumb = new Swiper(".project-one__thumb", {
+      slidesPerView: 3,
       spaceBetween: 16,
       speed: 1400,
       watchSlidesVisibility: true,
@@ -622,18 +622,18 @@
           spaceBetween: 10
         },
         575: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 10
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 16
         },
 
       }
     });
 
-    let testimonialsCarousel = new Swiper("#project-one__carousel", {
+    let testimonialsCarousel = new Swiper(".project-one__carousel", {
       observer: true,
       observeParents: true,
       loop: true,
